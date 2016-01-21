@@ -1,14 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+
 body {
 	
 	position: relative;
+  font-family: 'Open Sans', sans-serif;
 	
 }
 
 h1 {
   
-  font-weight: 500;
-  padding: 0.25em;
   margin: 0;
+  padding: 0;
+  display: inline-block;
   
 }
 
@@ -18,114 +21,124 @@ h1 {
 
 header {
   
-  position: fixed;
-  box-sizing: border-box;
-  top: 60px;
+  position: relative;
+  height: 600px;
   width: 100%;
-  height: 40px;
-  margin: 0;
-  padding: 0 10px;
-  background-color: slategray;
-  z-index: 2;
-  box-shadow: 0 5px 0 2px #ddd;
+  background-color: aliceblue;
+  margin: 0 0 1em;
+  padding: 0;
+
+}
+
+.searchbar {
   
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ddd;
+  z-index: 1;
+  
+}
+
+
+.sticky-navbar {
+  
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #ddd;
+  z-index: 9999;
+  display: none;
+  
+}
+
+.searchbar input,
+.sticky-navbar input {
+	
+  position: absolute;
+  margin: 0 auto;
+  top: 20%;
+  left: 25%;
+  border-radius: 8px;
+  width: calc(50% - 20px);
+  height: calc(50% - 20px);
+  padding: 10px;
+	
+}
+
+input:focus{
+	
+  outline: none;
+  border-color: #ddd;
+  box-shadow: 0 0 10px #ddd;
+	
 }
 
 nav {
   
-  position: fixed;
+  display: flex;
   box-sizing: border-box;
   border-right: thin solid white;
-  left: 0;
-  bottom: 0;
-  height: calc(100% - 100px);
-  width: 200px;
+  top: 0;
+  height: 75px;
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: aliceblue;
   z-index: 1;
-  overflow: auto;
   box-shadow: 5px 0 0 2px #ddd;
+  justify-content: flex-end;
   
-}
-
-nav input {
-	
-	margin: 1em;
-	border-radius: 10px;
-	
-}
-
-nav input:focus{
-	
-	outline: none;
-  border-color: #ddd;
-	box-shadow: 0 0 10px #ddd;
-	
+  
 }
 
 nav a {
   
-  box-sizing: border-box;
   display: flex;
-  flex-flow: column no-wrap;
+  box-sizing: border-box;
+  width: 75px;
+  height: 75px;
   margin: 0;
-  border-bottom: thin solid white;
-  width: 100%;
-  height: 50px;
-  padding: 0 10px;
+  padding: 0;
+  border: thin solid black;
   align-items: center;
-  text-transform: capitalize;
   text-decoration: none;
-  color: black;
-  
-}
-
-nav a:hover {
-  
-  border-left: 5px solid slategray;
-  
-}
-
-nav a:active {
-  
-  border-left: 5px solid green;
   
 }
 
 .app-container {
   
-  position: fixed;
   box-sizing: border-box;
-  width: calc(100% - 200px);
-  height: calc(100% - 140px);
+  width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 0 80px;
   background-color: white;
-  right: 0;
-  top: 100px;
   z-index: 1;
-  overflow: auto;
   flex-flow: row wrap;
-	justify-content: space-around;
-	display: flex;
+  justify-content: center;
+  display: flex;
   
 }
 
 .card {
 	
 	display: flex;
-	width: 20%;
-	height: calc(20vw / 1.6);
+	width: 200px;
+	height: 100px;
 	border: thin solid #ddd;
-	padding: 1em;
-	margin: 20px 10px;
+	margin: 1em;
 	
 }
 
 footer {
   
-  position: fixed;
+  position: absolute;
   box-sizing: border-box;
   bottom: 0;
   width: 100%;
@@ -134,6 +147,6 @@ footer {
   padding: 0 10px;
   background-color: slategray;
   z-index: 2;
-  box-shadow: 0 -5px 0 2px #ddd;
+  box-shadow: 0 -5px 0 2px #ddd, inset 0 25px 50px -25px #fff;
   
 }
