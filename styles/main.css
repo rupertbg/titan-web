@@ -65,18 +65,20 @@ header {
   margin: 0 auto;
   top: 20%;
   left: 25%;
-  border-radius: 8px;
+  border-radius: 0px;
   width: calc(50% - 20px);
   height: calc(50% - 20px);
   padding: 10px;
+  margin: 5px 0;
+  outline: none;
+  border-style: none;
 	
 }
 
 input:focus{
 	
   outline: none;
-  border-color: #ddd;
-  box-shadow: 0 0 10px #ddd;
+  border-style: none;
 	
 }
 
