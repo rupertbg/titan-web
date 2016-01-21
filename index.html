@@ -24,25 +24,21 @@
   
   <body>
     
-    <div class="sticky-navbar">
-      
-    <input type="text">
-    
-    </div>
-    
     <header>
     
       <nav>
         
-      <a href="#">boop</a>
-      <a href="#">floop</a>
-      <a href="#">poop</a>
+      <a href="#">Take Action!</a>
+      <a href="#">Button</a>
+      <a href="#">Help</a>
         
       </nav>
       
       <div class="searchbar">
 
-        <input type="text">
+        <input type="text" value="Find Something"
+        onblur="if (this.value == '') {this.value = 'Find Something';}"
+        onfocus="if (this.value == 'Find Something') {this.value = '';}" />
 
       </div>
     
