@@ -11,18 +11,6 @@
         });
     });
 })(jQuery);
-      
-(function($) {          
-    $(document).ready(function(){                    
-        $(window).scroll(function(){                          
-            if ($(this).scrollTop() > 0) {
-                $('.nav-container').addClass('sticky-nav');
-            } else {
-                $('.nav-container').removeClass('sticky-nav');
-            }
-        });
-    });
-})(jQuery);
 
 (function($) {          
     $(document).ready(function(){                    
@@ -31,6 +19,7 @@
                 $('.nav-container').addClass('relatch-nav');
                 $('.nav-container').removeClass('sticky-nav');
             } else {
+                $('.nav-container').addClass('sticky-nav');
                 $('.nav-container').removeClass('relatch-nav');
             }
         });
