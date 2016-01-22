@@ -1,5 +1,5 @@
-# Titan Website #
+# Web Template - Titan#
 
-This is a site under construction that I host locally on a Raspberry Pi Zero.
+This is the 'Titan' web template written by Rupert Bryant-Greene.
 
-Written by Rupert Bryant-Greene.
+## Currently under development ##
