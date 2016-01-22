@@ -24,7 +24,8 @@ header {
   position: relative;
   height: 600px;
   width: 100%;
-  background-color: aliceblue;
+  background-image: url(http://www.diningwithcompany.com/wp-content/uploads/2014/07/o-DINING-OUT-facebook.jpg);
+  background-size: contain;
   margin: 0 0 1em;
   padding: 0;
 
@@ -40,23 +41,7 @@ header {
   padding: 0;
   background-color: #ddd;
   z-index: 1;
-  
-}
-
-
-.sticky-nav {
-  
-  position: fixed;
-  top: 0px;
-  z-index: 9999;
-  
-}
-
-.sticky-search {
-  
-  position: fixed;
-  top: 75px;
-  z-index: 9999;
+  background-color: rgba(0,0,0,0.8);
   
 }
 
@@ -74,11 +59,11 @@ header {
   outline: none;
   border-style: none;
   text-align: center;
-  color: #ddd;
+  color: #000;
 	
 }
 
-input:focus{
+input:focus {
 	
   outline: none;
   border-style: none;
@@ -86,22 +71,43 @@ input:focus{
 	
 }
 
+.nav-container {
+  
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.8);
+  border-bottom: thin solid rgba(100,100,100,0.5);
+  width: 100%;
+  
+}
+
 nav {
   
   display: flex;
-  box-sizing: border-box;
-  border-right: thin solid white;
   top: 0;
   height: 75px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: aliceblue;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 1em;
   z-index: 1;
-  border-bottom: thin solid rgba(100,100,100,0.5);
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   
+  
+}
+
+nav h1 {
+  
+  display: flex;
+  font-size: 1em;
+  color: white;
+  
+}
+
+nav ul {
+  
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
   
 }
 
@@ -111,18 +117,45 @@ nav a {
   box-sizing: border-box;
   padding: 5px;
   margin: 0.5em;
-  border: thin solid black;
   align-items: center;
   text-decoration: none;
-  text-transform: uppercase;
-  color: black;
+  color: white;
   
 }
 
 nav a:hover {
 	
-	color: #fff;
+	background-color: #fff;
 	
+}
+
+nav .action {
+  
+  border: thin solid white;
+  
+}
+
+.sticky-nav {
+  
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+  
+}
+
+.relatch-nav {
+  
+  position: absolute;
+  top: 445px;
+  
+}
+
+.sticky-search {
+  
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+  
 }
 
 .app-container {

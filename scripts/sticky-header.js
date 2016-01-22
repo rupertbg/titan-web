@@ -3,7 +3,7 @@
 (function($) {          
     $(document).ready(function(){                    
         $(window).scroll(function(){                          
-            if ($(this).scrollTop() > 445) {
+            if ($(this).scrollTop() > 520) {
                 $('.searchbar').addClass('sticky-search');
             } else {
                 $('.searchbar').removeClass('sticky-search');
@@ -16,9 +16,22 @@
     $(document).ready(function(){                    
         $(window).scroll(function(){                          
             if ($(this).scrollTop() > 0) {
-                $('nav').addClass('sticky-nav');
+                $('.nav-container').addClass('sticky-nav');
             } else {
-                $('nav').removeClass('sticky-nav');
+                $('.nav-container').removeClass('sticky-nav');
+            }
+        });
+    });
+})(jQuery);
+
+(function($) {          
+    $(document).ready(function(){                    
+        $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 445) {
+                $('.nav-container').addClass('relatch-nav');
+                $('.nav-container').removeClass('sticky-nav');
+            } else {
+                $('.nav-container').removeClass('relatch-nav');
             }
         });
     });
