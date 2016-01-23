@@ -18,7 +18,8 @@
             if ($(this).scrollTop() > 445) {
                 $('.nav-container').addClass('relatch-nav');
                 $('.nav-container').removeClass('sticky-nav');
-            } else {
+            }
+            if ($(this).scrollTop() < 445) {
                 $('.nav-container').addClass('sticky-nav');
                 $('.nav-container').removeClass('relatch-nav');
             }
