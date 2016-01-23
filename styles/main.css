@@ -25,7 +25,7 @@ header {
   height: 600px;
   width: 100%;
   background-image: url(http://www.diningwithcompany.com/wp-content/uploads/2014/07/o-DINING-OUT-facebook.jpg);
-  background-size: contain;
+  background-size: cover;
   margin: 0;
   padding: 0;
   text-align: center;
