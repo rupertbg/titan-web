@@ -1,6 +1,5 @@
 // Sticky header menu (tablet & desktop)
-
-(function($) {          
+         
     $(document).ready(function(){                    
         $(window).scroll(function(){                          
             if ($(this).scrollTop() > 520) {
@@ -10,10 +9,9 @@
             }
         });
     });
-})(jQuery);
 
-(function($) {          
-    $(document).ready(function(){                    
+         
+                   
         $(window).scroll(function(){                          
             if ($(this).scrollTop() > 445) {
                 $('.nav-container').addClass('relatch-nav');
@@ -24,8 +22,6 @@
                 $('.nav-container').removeClass('relatch-nav');
             }
         });
-    });
-})(jQuery);
 
 // Scroll spin
           
