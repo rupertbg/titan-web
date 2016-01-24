@@ -1,7 +1,9 @@
 // Sticky header menu (tablet & desktop)
 
-                   
-        $(window).scroll(function(){
+
+        
+
+        $(window).touchmove(function(){
             if ($(this).scrollTop() > 520) {
                 $('.searchbar').addClass('sticky-search');
             } else {
